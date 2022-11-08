@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+:root {
+	/*bg*/
+	--dom:#7239B3;
+	/*card bg*/
+	--second:#FFBF00;
+	--third:#E32636;
+	--fourth:#00E5FF;
+	--hacker:#FFFFFF;
+	--bg:#000;
+	--txt:#fff;
+}
+
+* {
+outline:none;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:cbn, sans-serif;
+transition:700ms;
+font-weight:100;
+}
+
+@font-face {
+  font-family:cbn;/*Give it any name u desire*/
+  src: url(../fonts/cbn.ttf);
+}
+
+@font-face {
+  font-family:sq;/*Give it any name u desire*/
+  src: url(../fonts/sq.otf);
+}
+
+body {
+background:var(--bg);
+}
+
+img,
+svg {
+vertical-align:middle;
+}
+
+.hard-stuff {
+color:var(--third);
+margin:0.3rem 0;
+}
+
+.dynamic-stuff {
+color:var(--txt);
+}
+
+#gameCard > * {
+font-size:1.2rem;
+}
+
+#gameCard {
+background:var(--bg);
+width:100vw;
+padding:0 .5rem;
+padding-bottom:15vh;
+}
+
+.game-thumbnail {
+display:flex;
+align-items:center;
+justify-content:center;
+height:auto;
+}
+
+.game-thumbnail img {
+border-radius:5px;
+width:98%;
+}
+
+.ss-section {
+margin:1rem 0;
+height:auto;
+}
+
+.ss-section > *{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}
+
+.ss {
+width:100%;
+height:auto;
+}
+
+.thumbnail {
+width:100%;
+height:auto;
+margin:1rem 0;
+}
+
+.minimum-system-requirements {
+padding:.5rem 0 1rem 0;
+}
+
+.minimum-system-requirements .minimum-sub {
+padding-left:.5rem;
+padding-top:.5rem;
+}
+
+.random-game {
+width:100vw;
+height:15vh;
+display:flex;
+align-items:center;
+justify-content:center;
+position:fixed;
+top:93%;
+left:50%;
+transform:translate(-50%, -50%);
+transition:none;
+}
+
+.random-game button {
+background:var(--third);
+padding:1rem;
+border:1px solid transparent;
+border-radius:50rem;
+transition:none;
+color:#fff;
+transition:none;
+font-size:1rem;
+font-family:cbn, sans-serif;
+font-weight:100;
+transition:200ms;
+}
+
+.random-game button:active {
+background:#fff;
+color:var(--third);
+}
+
+.psudos {
+border:3px dashed var(--txt);
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
